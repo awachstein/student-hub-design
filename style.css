@@ -19,7 +19,7 @@ html {
 body {
   background-color: lightgrey;
   margin: 0;
-  max-width: 600px;
+  _max-width: 600px;
 }
 
 h1 {
@@ -32,6 +32,7 @@ h2 {
   color: var(--accent-color);
   text-transform: uppercase;
   margin: 0;
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -44,7 +45,8 @@ h3 {
   background-color: var(--background-color);
   max-width: 390px;
   display: grid;
-  grid-wrap: wrap;
+  padding-bottom: 4rem;
+  margin: 0 auto;
 }
 
 .hub-header {
@@ -58,8 +60,8 @@ h3 {
 
 .bi-list {
   color: var(--background-color);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .hub-main {
@@ -93,7 +95,7 @@ h3 {
 }
 
 .selection {
-  border: 0.25rem solid var(--accent-color);
+  border: 0.15rem solid var(--accent-color);
   color: var(--accent-color);
   padding: 0.5rem;
 }
@@ -103,16 +105,16 @@ h3 {
 .student-list {
   display: grid;
   gap: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .student {
-  border: 0.25rem solid var(--accent-color);
-  padding: 1.5rem;
-  box-shadow: 0.25rem 0.25rem var(--accent-color);
+  border: 0.15rem solid var(--accent-color);
+  padding: 0.75rem;
+  box-shadow: 0.15rem 0.15rem var(--accent-color);
   color: var(--accent-color);
   display: grid;
   grid-template-columns: 0.25fr 1fr;
-  font-size: 1rem;
   background-color: var(--header-color);
 }
 
@@ -127,4 +129,5 @@ h3 {
 
 a {
   color: var(--accent-color);
+  font-size: 0.75rem;
 }
