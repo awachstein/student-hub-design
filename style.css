@@ -106,6 +106,14 @@ h3 {
 
 /**************************************************/
 
+.svg-arrow {
+  fill: var(--accent-color);
+  height: 1rem;
+  width: 100%;
+  background-color: white;
+}
+
+/***************************************************/
 .student-list {
   display: grid;
   gap: 1rem;
