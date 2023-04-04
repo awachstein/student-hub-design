@@ -37,6 +37,7 @@ h2 {
 
 h3 {
   color: var(--second-header-color);
+  font-size: 1rem;
 }
 
 /**********************************************************/
@@ -51,10 +52,7 @@ h3 {
 
 .hub-header {
   background-color: var(--accent-color);
-  padding-top: 1.25rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem 1rem 0.5rem 1rem;
   display: grid;
   grid-template-columns: 0.1fr 1fr;
   align-items: center;
@@ -89,13 +87,20 @@ h3 {
 }
 
 #form {
-  display: gird;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .searchbar {
   grid-column: span 2;
+}
+
+#student-search {
   width: 100%;
+  border: 0.15rem solid var(--accent-color);
+  padding: 0.5rem;
 }
 
 .selection {
@@ -105,12 +110,25 @@ h3 {
 }
 
 /**************************************************/
+.svg-mask {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
 
-.svg-arrow {
+.svg-arrow-1 {
   fill: var(--accent-color);
   height: 1rem;
   width: 100%;
-  background-color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+.svg-arrow-2 {
+  fill: var(--accent-color-light);
+  height: 1.5rem;
+  width: 100%;
+  position: absolute;
+  background-color: (--accent-color-light);
 }
 
 /***************************************************/
