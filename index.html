@@ -39,20 +39,28 @@
                 </header>
                 <form id="form">
                     <div class="searchbar">
-                        <label for="student-search"></label>
+                        <label for="student-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </label>
                         <input type="search" id="student-search" name="q" placeholder="Search for students names">
                     </div>
                     <div class="selection-wrapper">
                         <select name="classes" id="classes" class="selection">
                             <option value="november-class-2021">NovemberClass2021</option>
-                            <option value="december-class-2021">DezemberClass2021</option>
+                            <option value="december-class-2021">DecemberClass2021</option>
                         </select>
+                        <div class="arrow-icon"></div>
                     </div>
                     <div class="selection-wrapper">
                         <select name="time-types" id="time-types" class="selection">
                             <option value="full-time">Full-time</option>
                             <option value="part-time">Part-time</option>
                         </select>
+                        <div class="arrow-icon"></div>
                     </div>
                 </form>
             </article>
