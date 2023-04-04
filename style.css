@@ -180,13 +180,20 @@ select {
   background-color: var(--header-color);
 }
 
-.bi-person {
+.icon-container {
   grid-row: span 2;
   background-color: var(--accent-color-light);
   color: var(--header-color);
-  width: 2rem;
-  height: 2rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 10%;
+}
+
+.bi-person {
+  color: var(--header-color);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.5rem;
 }
 
 a {
