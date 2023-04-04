@@ -115,7 +115,7 @@ h3 {
 
 select {
   outline: none;
-  appearance: none;
+  width: 100%;
   box-shadow: none;
   border: 0;
   background: transparent;
@@ -133,14 +133,14 @@ select {
   display: flex;
 }
 
-.arrow-icon {
+/*.arrow-icon {
   background-color: var(--accent-color-light);
   position: absolute;
   right: 0;
   height: 2rem;
   width: 1.75rem;
 }
-
+*/
 /**************************************************/
 .svg-mask {
   position: relative;
