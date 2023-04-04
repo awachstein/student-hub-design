@@ -51,7 +51,10 @@ h3 {
 
 .hub-header {
   background-color: var(--accent-color);
-  padding: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: grid;
   grid-template-columns: 0.1fr 1fr;
   align-items: center;
@@ -66,7 +69,7 @@ h3 {
 
 .hub-main {
   background-color: var(--background-color);
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 /****************************************************/
@@ -82,6 +85,7 @@ h3 {
 .subtitle {
   color: var(--second-header-color);
   margin-top: 0;
+  font-size: 0.9rem;
 }
 
 #form {
