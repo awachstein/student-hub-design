@@ -12,24 +12,26 @@ html {
   --accent-color-light: #8849cf;
   --light-color: #4b148a61;
   --second-header-color: #00000099;
-  --background-color: #e5e5e5;
+  --background-color: #fbfbfb;
   --header-color: #fbfbfb;
 }
 
 body {
   background-color: lightgrey;
   margin: 0;
+  max-width: 600px;
 }
 
 h1 {
   text-transform: uppercase;
   color: var(--header-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h2 {
   color: var(--accent-color);
   text-transform: uppercase;
+  margin: 0;
 }
 
 h3 {
@@ -39,8 +41,10 @@ h3 {
 /**********************************************************/
 
 .hub-container {
-  background-color: var;
-  max-width: 600px;
+  background-color: var(--background-color);
+  max-width: 390px;
+  display: grid;
+  grid-wrap: wrap;
 }
 
 .hub-header {
@@ -60,16 +64,38 @@ h3 {
 
 .hub-main {
   background-color: var(--background-color);
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 /****************************************************/
 .navigation {
-  display: flex;
+  display: grid;
+  margin-bottom: 3rem;
+}
+
+.nav-header {
+  margin-bottom: 0;
 }
 
 .subtitle {
   color: var(--second-header-color);
+  margin-top: 0;
+}
+
+#form {
+  display: gird;
+  grid-template-columns: 1fr 1fr;
+}
+
+.searchbar {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.selection {
+  border: 0.25rem solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.5rem;
 }
 
 /**************************************************/
@@ -81,20 +107,21 @@ h3 {
 
 .student {
   border: 0.25rem solid var(--accent-color);
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0.25rem 0.25rem var(--accent-color);
   color: var(--accent-color);
   display: grid;
   grid-template-columns: 0.25fr 1fr;
   font-size: 1rem;
+  background-color: var(--header-color);
 }
 
 .bi-person {
   grid-row: span 2;
   background-color: var(--accent-color-light);
   color: var(--header-color);
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 10%;
 }
 
