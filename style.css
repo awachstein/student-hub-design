@@ -95,18 +95,50 @@ h3 {
 
 .searchbar {
   grid-column: span 2;
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  height: 45%;
+  right: 0;
+  fill: var(--accent-color);
+  margin: 0.5rem 1.5rem;
 }
 
 #student-search {
   width: 100%;
   border: 0.15rem solid var(--accent-color);
   padding: 0.5rem;
+  outline: none;
+}
+
+select {
+  outline: none;
+  appearance: none;
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+  padding: 0.5rem;
 }
 
 .selection {
+  color: var(--accent-color);
+}
+
+.selection-wrapper {
   border: 0.15rem solid var(--accent-color);
   color: var(--accent-color);
-  padding: 0.5rem;
+  position: relative;
+  display: flex;
+}
+
+.arrow-icon {
+  background-color: var(--accent-color-light);
+  position: absolute;
+  right: 0;
+  height: 2rem;
+  width: 1.75rem;
 }
 
 /**************************************************/
