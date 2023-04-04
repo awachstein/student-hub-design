@@ -148,6 +148,7 @@ select {
   right: 0;
   height: 2rem;
   width: 1.75rem;
+  pointer-events: none;
 }
 
 .bi-chevron-down {
